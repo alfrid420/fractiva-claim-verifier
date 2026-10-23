@@ -1,0 +1,100 @@
+[
+  {
+    "claim_id": "C1",
+    "verdict": "overstated",
+    "checks": {
+      "figure": null,
+      "population": "mismatch",
+      "drug_indication": "mismatch",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 4,
+    "evidence_source": "SOLIQUA_LBL.pdf",
+    "evidence_span": "is indicated for the treatment of adults patients with Obesity with insufficiently controlled type 2 diabetes mellitus to improve glycemic control as an adjunct to diet and exercise in addition to metformin",
+    "why": "The Prescribing Information (LBL p4) limits the indication to adults with obesity, as an adjunct to diet and exercise, in addition to metformin; the claim drops these qualifiers and reads broader than the label."
+  },
+  {
+    "claim_id": "C2",
+    "verdict": "supported",
+    "checks": {
+      "figure": "match",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "match"
+    },
+    "evidence_page": 1,
+    "evidence_source": "SoliMix_Rosenstock2021.pdf",
+    "evidence_span": "was reduced by 1.3% with iGlarLixi and 1.1% with BIAsp 30",
+    "why": "Abstract gives 1.3% vs 1.1% (population: basal insulin + OADs, 26 weeks). Figure 1 (PDF p5) shows -1.3 +/- 0.1 and -1.1 +/- 0.1 and superiority 95% CI -0.4,-0.1, p<0.001; the abstract's 97.5% CI is the separate non-inferiority test with the same bounds, so the claim's 95% CI is valid."
+  },
+  {
+    "claim_id": "C3",
+    "verdict": "overstated",
+    "checks": {
+      "figure": "mismatch",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 13,
+    "evidence_source": "LixiLan-O_Rosenstock2016.pdf",
+    "evidence_span": "changes from baseline to Week 30 in HbA1c were −1.63% for iGlarLixi, −1.34% for iGlar",
+    "why": "Claim says ~2x greater reduction; the paper's LS-mean changes give 1.63/1.34 = 1.22x. p<0.0001, Week 30 and population are correct; only the multiplier is inflated."
+  },
+  {
+    "claim_id": "C4",
+    "verdict": "supported",
+    "checks": {
+      "figure": "match",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "match"
+    },
+    "evidence_page": 6,
+    "evidence_source": "SoliMix_Rosenstock2021.pdf",
+    "evidence_span": "42.2 (n=187) 31.8 (n=141) 1.65 (1.25, 2.19)",
+    "why": "SoliMix Figure 2 (not a table), row 'Participants who reached HbA1c <7 %': 42.2% (n=187) vs 31.8% (n=141), OR 1.65 (1.25, 2.19). The figure's text layer is jumbled (31.8 (n=141) appears in two rows), so the row pairing was confirmed on the rendered page. It is an exploratory endpoint with no p-value, which the claim does not assert."
+  },
+  {
+    "claim_id": "C5",
+    "verdict": "overstated",
+    "checks": {
+      "figure": "mismatch",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 2,
+    "evidence_source": "LixiLan-L_Aroda2016_abstract.pdf",
+    "evidence_span": "Mean body weight decreased by 0.7 kg with iGlarLixi and increased by 0.7 kg with iGlar (1.4 kg difference, P < 0.0001)",
+    "why": "Source shows a 0.7 kg weight LOSS and calls it 'a beneficial effect on body weight'; 'neutral' (no change) appears nowhere in the source. The LBL itself calls the same data 'Weight Benefit' on p3."
+  },
+  {
+    "claim_id": "C6",
+    "verdict": "supported",
+    "checks": {
+      "figure": "match",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "match"
+    },
+    "evidence_page": 7,
+    "evidence_source": "SoliMix_Rosenstock2021.pdf",
+    "evidence_span": "6.3 (n=28) 0.45 (0.28, 0.73)",
+    "why": "SoliMix Figure 3A level-2 hypoglycemia (<54 mg/dL) incidence: 6.3% (n=28) vs 12.9% (n=57), OR 0.45 (0.28, 0.73). Not to be confused with overall hypoglycemia OR 0.62 (0.47, 0.81) or the event-rate ratio in Figure 3B. Note the '55%' badge is a relative ODDS reduction (1-0.45), not a risk reduction."
+  },
+  {
+    "claim_id": "C7",
+    "verdict": "overstated",
+    "checks": {
+      "figure": "mismatch",
+      "population": "match",
+      "drug_indication": "match",
+      "actually_stated": "mismatch"
+    },
+    "evidence_page": 4,
+    "evidence_source": "SoliMix_Rosenstock2021.pdf",
+    "evidence_span": "in body weight from baseline to week 26 (LS mean difference vs. BIAsp 30",
+    "why": "JUDGMENT CALL (supported is the defensible alternative). Weight benefit holds in all three sources (-0.7 vs +0.7 kg LixiLan-L; -0.7 vs +1.2 kg SoliMix; -0.62 vs +0.70 kg PSM), but the LBL prints p<0.0001 under the SoliMix panel while the paper reports only P<0.001 (the LBL's own summary box says p<0.001); LixiLan-L n and SE are not in the abstract; the third panel is a post hoc propensity-matched analysis (24 vs 26 weeks); and the 'benefit' is partly the comparators' weight gain."
+  }
+]
